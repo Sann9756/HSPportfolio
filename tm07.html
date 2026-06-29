@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로맨스 콘티 - 상세 보기</title>
+    <link rel="stylesheet" href="style.css">
+    
+<style>
+        /* 1. 배경을 감싸는 뷰어 박스의 제한을 풀고 가로 스크롤을 허용합니다 */
+        .viewer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            background-color: #111111; /* 콘티가 더 잘 보이도록 어두운 웹툰 뷰어 배경 추천 */
+            padding: 40px 0;
+            width: 100% !important;
+            max-width: none !important; /* 가두고 있던 최대 너비 제한 해제 */
+            overflow-x: auto; /* 이미지 크기가 화면보다 커지면 자연스럽게 가로로 넘겨볼 수 있도록 설정 */
+        }
+
+        /* 2. 이미지 자체를 모니터 화면보다 훨씬 거대하게 강제 확대합니다 */
+        .viewer-container img {
+            width: 140vw !important; /* 💡 화면 너비(100vw)보다 40% 더 큰 140% 크기로 강제 고정 */
+            max-width: 1600px !important; /* 거대 모니터에서도 짱 크게 보이도록 제한선 대폭 상향 */
+            height: auto !important; /* 비율 유지 */
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5); /* 이미지 경계 구분을 위한 세련된 그림자 효과 */
+        }
+
+        /* 만약 body 자체에도 제한이 걸려있을 경우를 대비한 안전장치 */
+        .viewer-body {
+            width: 100% !important;
+            max-width: none !important;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body class="viewer-body">
+
+    <header class="viewer-header">
+        <div class="container">
+            <a href="index.html" class="back-btn">← 목록으로</a>
+            <span class="viewer-title">로맨스 콘티 작품 제목</span>
+        </div>
+    </header>
+
+    <div class="viewer-container">
+        <img src="images/TM1.jpg" alt="콘티 1" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+1'">
+        <img src="images/TM_135화.jpg" alt="콘티 2" onerror="this.src='https://via.placeholder.com/800x2000/333/fff?text=Webtoon+Image+Part+2'">
+        <img src="images/TM_136화.jpg" alt="콘티 3" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+3'">
+        <img src="images/TM_137화.jpg" alt="콘티 4" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+4'">
+        <img src="images/TM_138화.jpg" alt="콘티 5" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+5'">
+        <img src="images/TM_139화.jpg" alt="콘티 6" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+6'">
+        <img src="images/TM_140화.jpg" alt="콘티 7" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+7'">
+        <img src="images/TM_140화2.jpg" alt="콘티 8" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+8'">
+        <img src="images/TM_141화.jpg" alt="콘티 9" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+9'">
+        <img src="images/TM_142화.jpg" alt="콘티 10" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+10'">
+        <img src="images/TM_144화.jpg" alt="콘티 11" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+11'">
+        <img src="images/TM_145화.jpg" alt="콘티 12" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+12'">
+        <img src="images/TM_146화.jpg" alt="콘티 13" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+13'">
+        <img src="images/TM_147화.jpg" alt="콘티 14" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+14'">
+        <img src="images/TM_148화.jpg" alt="콘티 15" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+15'">
+        <img src="images/TM_149화.jpg" alt="콘티 16" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+16'">
+        <img src="images/TM_150화.jpg" alt="콘티 17" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+17'">
+        <img src="images/TM_151화.jpg" alt="콘티 18" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+18'">
+        <img src="images/TM_152화.jpg" alt="콘티 19" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+19'">
+        <img src="images/TM_153화.jpg" alt="콘티 20" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+20'">
+        <img src="images/TM_154화.jpg" alt="콘티 21" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+21'">
+        <img src="images/TM2.jpg" alt="콘티 22" onerror="this.src='https://via.placeholder.com/800x2000/222/fff?text=Webtoon+Image+Part+22'">
+        </div>
+
+</body>
+</html>
